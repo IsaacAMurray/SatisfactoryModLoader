@@ -7,6 +7,8 @@
 #include "FGUseableInterface.h"
 #include "FGBuildableRailroadSwitchControl.generated.h"
 
+class UFGRailroadTrackConnectionComponent;
+
 /**
  * Struct containing packaged switch data so we can get an OnRep for them as a group.
  */
@@ -100,7 +102,7 @@ protected:
 private:
 	/** Connection we control, might become null if the track is removed but not the control (mods and save game editing). */
 	UPROPERTY( SaveGame, Replicated )
-	class UFGRailroadTrackConnectionComponent* mControlledConnection;
+	UFGRailroadTrackConnectionComponent* mControlledConnection;
 
 	/** Current switch position read from the controlled connection. */
 	UPROPERTY( Replicated, Meta = (NoAutoJson = true) )

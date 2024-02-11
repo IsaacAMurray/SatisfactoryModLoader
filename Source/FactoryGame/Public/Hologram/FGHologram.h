@@ -63,6 +63,8 @@ UCLASS( hidecategories = ( "Actor", "Input", "Replication", "Rendering", "Actor 
 class FACTORYGAME_API AFGHologram : public AActor, public IFGConstructionMessageInterface
 {
 	GENERATED_BODY()
+
+	friend class AFINBlueprintHologram;
 public:
 	AFGHologram();
 

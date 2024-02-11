@@ -305,7 +305,7 @@ protected:
 			return cdo;
 		}
 
-		UE_LOG( LogBuilding, Warning, TEXT( "\"%s\": Tried to GetDefaultBuildable of class \"%s\" but was not able to. BuildClass is \"%s\"" ), *GetName(), *TBuildableClass::StaticClass()->GetName(), *mBuildClass->GetName() );
+		//UE_LOG( LogBuilding, Warning, TEXT( "\"%s\": Tried to GetDefaultBuildable of class \"%s\" but was not able to. BuildClass is \"%s\"" ), *GetName(), *TBuildableClass::StaticClass()->GetName(), *mBuildClass->GetName() );
 		
 		ensure( false );
 

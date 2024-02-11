@@ -276,6 +276,7 @@ public:
 private:
 	friend struct FFGRailroadBlockReservation; // Access to the helper functions.
 	friend class AFGRailroadSubsystem; // Show debug command.
+	friend class FStaticReflectionSourceHelper;
 	
 	/** Vehicles currently occupying this block. */
 	TArray< TWeakObjectPtr< AFGRailroadVehicle > > mOccupiedBy;
